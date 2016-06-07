@@ -18,9 +18,11 @@ $this->title = $name;
     </div>
 
     <p>
+        ข้อผิดพลาดด้านบนเกิดขึ้นในขณะที่เว็บเซอร์ฟเวอร์กำลังประมวลผลการร้องขอของคุณ
         The above error occurred while the Web server was processing your request.
     </p>
     <p>
+        กรุณาติดต่อเราหากคุณคิดว่าเซอร์ฟเวอร์มีข้อผิดพลาด ขอบคุณ
         Please contact us if you think this is a server error. Thank you.
     </p>
 

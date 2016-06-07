@@ -36,6 +36,13 @@ return [
             ],
         ],
         */
+        /*'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@vendor/kongoon/yii2-theme-ratchakarn/views'
+                ]
+            ]
+        ]*/
     ],
     'params' => $params,
 ];

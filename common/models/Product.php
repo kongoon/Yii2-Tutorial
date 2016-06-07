@@ -3,33 +3,25 @@
 namespace common\models;
 
 use Yii;
+use common\models\MyActiveRecord;
+use yii\behaviors\TimestampBehavior;
 
-/**
- * This is the model class for table "product".
- *
- * @property integer $id
- * @property integer $category_id
- * @property string $name
- * @property string $description
- * @property integer $price
- * @property integer $created_at
- * @property integer $updated_at
- *
- * @property Category $category
- */
-class Product extends \yii\db\ActiveRecord
+class Product extends MyActiveRecord
 {
-    /**
-     * @inheritdoc
-     */
     public static function tableName()
     {
         return 'product';
     }
 
-    /**
-     * @inheritdoc
-     */
+    public function behaviors()
+    {
+        return [
+            'timestamp' => [
+                'class' => TimestampBehavior::className()
+            ]
+        ];
+    }
+
     public function rules()
     {
         return [
@@ -40,9 +32,6 @@ class Product extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return [

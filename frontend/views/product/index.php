@@ -24,10 +24,17 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'pager' => [
+            'class' => \kop\y2sp\ScrollPager::className(),
+            'container' => '.grid-view tbody',
+            'item' => 'tr',
+            'paginationSelector' => '.grid-view .pagination',
+            'triggerTemplate' => '<tr class="ias-trigger"><td colspan="100%" style="text-align: center"><a style="cursor: pointer">{text}</a></td></tr>',
+        ],
         'columns' => [
             [
                 'class' => 'yii\grid\CheckboxColumn',
-                
+
             ],
             ['class' => 'yii\grid\SerialColumn'],
             //'id',
@@ -49,9 +56,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $model->status == 0 ? '<span class="label label-danger">Inactive</span>' : '<span class="label label-success">Active</span>';
                 }
             ],
-            //'created_at:date',
-            'updated_at:datetime',//การแสดงผลวันที่ตาม format
-            
+            'created_at',
+            'updated_at',//การแสดงผลวันที่ตาม format
+
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

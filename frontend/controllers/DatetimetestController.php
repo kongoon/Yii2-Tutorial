@@ -3,16 +3,16 @@
 namespace frontend\controllers;
 
 use Yii;
-use common\models\Product;
-use frontend\models\ProductSearch;
+use common\models\Datetimetest;
+use common\models\DatetimetestSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProductController implements the CRUD actions for Product model.
+ * DatetimetestController implements the CRUD actions for Datetimetest model.
  */
-class ProductController extends Controller
+class DatetimetestController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,22 +30,14 @@ class ProductController extends Controller
     }
 
     /**
-     * Lists all Product models.
+     * Lists all Datetimetest models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ProductSearch();
+        $searchModel = new DatetimetestSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        Yii::$app->session->setFlash('success', 'Success Flash', false);
-        Yii::$app->session->setFlash('info', 'Info Flash');
-        Yii::$app->session->setFlash('warning', 'Warning Flash');
-        Yii::$app->session->setFlash('danger', 'Primary Flash');
-        
-        
-        Yii::$app->session->addFlash('success', 'New Success Flash');
-        
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -53,7 +45,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Displays a single Product model.
+     * Displays a single Datetimetest model.
      * @param integer $id
      * @return mixed
      */
@@ -65,23 +57,15 @@ class ProductController extends Controller
     }
 
     /**
-     * Creates a new Product model.
+     * Creates a new Datetimetest model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Product();
+        $model = new Datetimetest();
 
-        if ($model->load(Yii::$app->request->post())) {
-            
-            if($model->save())
-            {
-                Yii::$app->session->setFlash('success', 'บันทึกข้อมูลเรียบร้อย');
-                
-            }else{
-                Yii::$app->session->setFlash('danger', 'มีข้อผิดพลาด กรุณาติดต่อผู้ดูแลระบบ');
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -91,7 +75,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Updates an existing Product model.
+     * Updates an existing Datetimetest model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -110,7 +94,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Deletes an existing Product model.
+     * Deletes an existing Datetimetest model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -123,15 +107,15 @@ class ProductController extends Controller
     }
 
     /**
-     * Finds the Product model based on its primary key value.
+     * Finds the Datetimetest model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Product the loaded model
+     * @return Datetimetest the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Product::findOne($id)) !== null) {
+        if (($model = Datetimetest::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

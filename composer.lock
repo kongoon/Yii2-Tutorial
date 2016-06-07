@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3052e74dd7abf5792eb2d4852595fbcc",
-    "content-hash": "53db348c915746e9563dd3e23760efd9",
+    "hash": "7df4e65a6cde1930650d88ed61fcaebf",
+    "content-hash": "c5bbebe12300a3f39a0238b7521eef7c",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -57,17 +57,85 @@
             ]
         },
         {
-            "name": "bower-asset/jquery",
-            "version": "2.2.3",
+            "name": "bower-asset/c3js-chart",
+            "version": "0.4.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198"
+                "url": "https://github.com/c3js/c3.git",
+                "reference": "223404a79246c61d150d8a209dbdc81f6955083b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/af22a351b2ea5801ffb1695abb3bb34d5bed9198",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198",
+                "url": "https://api.github.com/repos/c3js/c3/zipball/223404a79246c61d150d8a209dbdc81f6955083b",
+                "reference": "223404a79246c61d150d8a209dbdc81f6955083b",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/d3": "~3.5.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "c3.css",
+                    "c3.js"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "htdocs",
+                    "spec",
+                    "src",
+                    "package.json",
+                    "component.json",
+                    "Gruntfile.*"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "D3-based reusable chart library",
+            "keywords": [
+                "chart",
+                "d3"
+            ]
+        },
+        {
+            "name": "bower-asset/d3",
+            "version": "v3.5.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mbostock-bower/d3-bower.git",
+                "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mbostock-bower/d3-bower/zipball/7a826d211d5067867debf9ce24a9987e0cb02b6e",
+                "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "d3.js",
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A JavaScript visualization library for HTML and SVG."
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -158,6 +226,65 @@
                     "Gruntfile.js",
                     "node_modules",
                     "package.json"
+                ]
+            }
+        },
+        {
+            "name": "bower-asset/sweetalert",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t4t5/sweetalert.git",
+                "reference": "3b9d8eb90268e0b1f8f58b2eba240631df0ad18f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t4t5/sweetalert/zipball/3b9d8eb90268e0b1f8f58b2eba240631df0ad18f",
+                "reference": "3b9d8eb90268e0b1f8f58b2eba240631df0ad18f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bower-asset/jquery": "~2.1.4",
+                "bower-asset/qunit": "~1.18.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/sweetalert.min.js",
+                    "dist/sweetalert.css"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A beautiful replacement for JavaScript's alert.",
+            "keywords": [
+                "alert",
+                "modal"
+            ]
+        },
+        {
+            "name": "bower-asset/toastr",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpapa/toastr-bower.git",
+                "reference": "8ff63def898c6ac619fef2d284576e8e4941cb1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpapa/toastr-bower/zipball/8ff63def898c6ac619fef2d284576e8e4941cb1a",
+                "reference": "8ff63def898c6ac619fef2d284576e8e4941cb1a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6.3"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "toastr.js",
+                    "toastr.css"
                 ]
             }
         },
@@ -257,16 +384,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.6.0",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd"
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/ae1828d955112356f7677c465f94f7deb7d27a40",
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +424,189 @@
             "keywords": [
                 "html"
             ],
-            "time": "2013-11-30 08:25:19"
+            "time": "2015-08-05 01:03:42"
+        },
+        {
+            "name": "kartik-v/mpdf",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/mpdf.git",
+                "reference": "6ab0ae3a82673e514f168c8e6da02289e6d95f2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/mpdf/zipball/6ab0ae3a82673e514f168c8e6da02289e6d95f2c",
+                "reference": "6ab0ae3a82673e514f168c8e6da02289e6d95f2c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=4.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "mpdf.php",
+                    "classes"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-1.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ian N Back"
+                }
+            ],
+            "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support. This is a fork of the official mPDF library.",
+            "homepage": "http://www.mpdf1.com/mpdf/index.php",
+            "keywords": [
+                "pdf",
+                "php",
+                "utf-8"
+            ],
+            "time": "2015-05-05 07:34:49"
+        },
+        {
+            "name": "kartik-v/yii2-mpdf",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-mpdf.git",
+                "reference": "4599a1d95d7e0afb3279322e302717b7e4f52dd3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/4599a1d95d7e0afb3279322e302717b7e4f52dd3",
+                "reference": "4599a1d95d7e0afb3279322e302717b7e4f52dd3",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/mpdf": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\mpdf\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "A Yii2 wrapper component for the mPDF library which generates PDF files from UTF-8 encoded HTML.",
+            "homepage": "https://github.com/kartik-v/yii2-mpdf",
+            "keywords": [
+                "component",
+                "extension",
+                "html",
+                "mpdf",
+                "pdf",
+                "utf8",
+                "yii2"
+            ],
+            "time": "2014-11-10 18:09:37"
+        },
+        {
+            "name": "kongoon/yii2-c3js-chart",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kongoon/yii2-c3js.git",
+                "reference": "5b0e84d6ca9d394bde33dccfb335a91beb7da5f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kongoon/yii2-c3js/zipball/5b0e84d6ca9d394bde33dccfb335a91beb7da5f6",
+                "reference": "5b0e84d6ca9d394bde33dccfb335a91beb7da5f6",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/c3js-chart": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kongoon\\c3js\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Manop Kongoon",
+                    "email": "kongoon@gmail.com",
+                    "homepage": "https://www.programmerthailand.com/"
+                }
+            ],
+            "description": "C3JS Chart for Yii Framework 2.0",
+            "homepage": "https://github.com/kongoon/yii2-c3js",
+            "keywords": [
+                "c3js",
+                "chart",
+                "extension",
+                "yii",
+                "yii2"
+            ],
+            "time": "2016-05-23 04:52:37"
+        },
+        {
+            "name": "kongoon/yii2-orgchart",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kongoon/yii2-orgchart.git",
+                "reference": "e17cb9ce5de8f21f045a7c9a399e7760ba800b80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kongoon/yii2-orgchart/zipball/e17cb9ce5de8f21f045a7c9a399e7760ba800b80",
+                "reference": "e17cb9ce5de8f21f045a7c9a399e7760ba800b80",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kongoon\\orgchart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Manop Kongoon",
+                    "email": "kongoon@gmail.com",
+                    "homepage": "https://www.programmerthailand.com/"
+                }
+            ],
+            "description": "Google Visualization OrgChart for Yii Framework 2.0",
+            "homepage": "https://github.com/kongoon/yii2-orgchart",
+            "keywords": [
+                "OrgChart",
+                "extension",
+                "google",
+                "visualization",
+                "yii",
+                "yii2"
+            ],
+            "time": "2016-05-23 08:11:51"
         },
         {
             "name": "kongoon/yii2-paypal",
@@ -344,17 +653,157 @@
             "time": "2016-04-11 15:46:50"
         },
         {
-            "name": "paypal/rest-api-sdk-php",
-            "version": "v1.7.0",
+            "name": "kongoon/yii2-theme-ratchakarn",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
-                "reference": "6175f127144cc47da9010c3915b0afa8443776e4"
+                "url": "https://github.com/kongoon/yii2-theme-ratchakarn.git",
+                "reference": "6d064ae21afe64b3af85c6e3ad321d7bb99446a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/6175f127144cc47da9010c3915b0afa8443776e4",
-                "reference": "6175f127144cc47da9010c3915b0afa8443776e4",
+                "url": "https://api.github.com/repos/kongoon/yii2-theme-ratchakarn/zipball/6d064ae21afe64b3af85c6e3ad321d7bb99446a3",
+                "reference": "6d064ae21afe64b3af85c6e3ad321d7bb99446a3",
+                "shasum": ""
+            },
+            "require": {
+                "lavrentiev/yii2-toastr": "*",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kongoon\\yii2\\themes\\ratchakarn\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Manop Kongoon",
+                    "email": "kongoon@gmail.com"
+                }
+            ],
+            "description": "Ratchakarn theme for Yii Framework 2",
+            "homepage": "https://github.com/kongoon/yii2-theme-ratchakarn",
+            "keywords": [
+                "extension",
+                "theme",
+                "yii2",
+                "ราชการ"
+            ],
+            "time": "2016-05-12 05:29:40"
+        },
+        {
+            "name": "kop/yii2-scroll-pager",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kop/yii2-scroll-pager.git",
+                "reference": "3f8972f8a8e9998bfaee660507159a8a58e1bacc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kop/yii2-scroll-pager/zipball/3f8972f8a8e9998bfaee660507159a8a58e1bacc",
+                "reference": "3f8972f8a8e9998bfaee660507159a8a58e1bacc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "webcreate/jquery-ias": "^2.2.1",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kop\\y2sp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Koptiev",
+                    "email": "ivan.koptiev@codex.systems",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Infinite AJAX scrolling for Yii2 ListView widget",
+            "homepage": "http://kop.github.io/yii2-scroll-pager/",
+            "keywords": [
+                "pager",
+                "pagination",
+                "scroll",
+                "scrolling",
+                "yii",
+                "yii2"
+            ],
+            "time": "2016-04-03 01:27:47"
+        },
+        {
+            "name": "lavrentiev/yii2-toastr",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lavrentiev/yii2-toastr.git",
+                "reference": "758b58ccb7b325b2b4cd10b17178bcb72b8813e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lavrentiev/yii2-toastr/zipball/758b58ccb7b325b2b4cd10b17178bcb72b8813e2",
+                "reference": "758b58ccb7b325b2b4cd10b17178bcb72b8813e2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/toastr": "2.1.1",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "lavrentiev\\widgets\\toastr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Lavrentiev (RyanTedder)",
+                    "email": "lavrentiev.e@gmail.com",
+                    "homepage": "https://github.com/lavrentiev"
+                }
+            ],
+            "description": "Simple javascript toast notifications",
+            "homepage": "https://github.com/lavrentiev/yii2-toastr",
+            "keywords": [
+                "extension",
+                "jquery",
+                "notification",
+                "toastr",
+                "yii2"
+            ],
+            "time": "2015-11-05 08:09:14"
+        },
+        {
+            "name": "paypal/rest-api-sdk-php",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
+                "reference": "d3031fc35f4f4b0034a22a6e7174ae063f3a4b22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/d3031fc35f4f4b0034a22a6e7174ae063f3a4b22",
+                "reference": "d3031fc35f4f4b0034a22a6e7174ae063f3a4b22",
                 "shasum": ""
             },
             "require": {
@@ -390,7 +839,7 @@
                 "rest",
                 "sdk"
             ],
-            "time": "2016-04-18 18:39:43"
+            "time": "2016-05-13 18:25:38"
         },
         {
             "name": "psr/log",
@@ -432,16 +881,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.1",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421"
+                "reference": "d8db871a54619458a805229a057ea2af33c753e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0697e6aa65c83edf97bb0f23d8763f94e3f11421",
-                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d8db871a54619458a805229a057ea2af33c753e8",
+                "reference": "d8db871a54619458a805229a057ea2af33c753e8",
                 "shasum": ""
             },
             "require": {
@@ -481,20 +930,100 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-06-06 14:19:39"
+            "time": "2016-05-01 08:45:47"
         },
         {
-            "name": "yiisoft/yii2",
-            "version": "2.0.7",
+            "name": "webcreate/jquery-ias",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "f45651582cb853b4326730d9d187a0f7a44a45a3"
+                "url": "https://github.com/webcreate/infinite-ajax-scroll.git",
+                "reference": "7380f74fca64180a4c5da18d01065a8aef0494b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f45651582cb853b4326730d9d187a0f7a44a45a3",
-                "reference": "f45651582cb853b4326730d9d187a0f7a44a45a3",
+                "url": "https://api.github.com/repos/webcreate/infinite-ajax-scroll/zipball/7380f74fca64180a4c5da18d01065a8aef0494b7",
+                "reference": "7380f74fca64180a4c5da18d01065a8aef0494b7",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fieg",
+                    "email": "jeroen@fieg.nl",
+                    "homepage": "http://webcreate.nl"
+                }
+            ],
+            "description": "Infinite AJAX Scroll: A jQuery plugin that turns your server-side pagination into an infinite scrolling one using AJAX",
+            "homepage": "http://infiniteajaxscroll.com",
+            "keywords": [
+                "ajax",
+                "ias",
+                "infinite",
+                "jquery",
+                "pagination",
+                "scroll",
+                "scrolling"
+            ],
+            "time": "2015-05-08 14:58:16"
+        },
+        {
+            "name": "yii2mod/yii2-sweet-alert",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-sweet-alert.git",
+                "reference": "02e5186c312702729cd27af5d978d97915260b2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-sweet-alert/zipball/02e5186c312702729cd27af5d978d97915260b2b",
+                "reference": "02e5186c312702729cd27af5d978d97915260b2b",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/sweetalert": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\alert\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Chepurnoy",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Alert widget based on SweetAlert extension {@link http://tristanedwards.me/sweetalert)",
+            "keywords": [
+                "module",
+                "yii2"
+            ],
+            "time": "2015-09-24 10:45:11"
+        },
+        {
+            "name": "yiisoft/yii2",
+            "version": "2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-framework.git",
+                "reference": "53992b136b993e32ca7b6f399cf42b143f8685a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/53992b136b993e32ca7b6f399cf42b143f8685a6",
+                "reference": "53992b136b993e32ca7b6f399cf42b143f8685a6",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +1034,7 @@
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "ezyang/htmlpurifier": "4.6.*",
+                "ezyang/htmlpurifier": "~4.6",
                 "lib-pcre": "*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2-composer": "~2.0.4"
@@ -575,7 +1104,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-02-14 14:45:55"
+            "time": "2016-04-28 14:50:20"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -675,6 +1204,54 @@
             "time": "2016-02-06 00:49:24"
         },
         {
+            "name": "yiisoft/yii2-mongodb",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-mongodb.git",
+                "reference": "b920e885b214bdd3b9409ab0c793384c2caf4c31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-mongodb/zipball/b920e885b214bdd3b9409ab0c793384c2caf4c31",
+                "reference": "b920e885b214bdd3b9409ab0c793384c2caf4c31",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongo": ">=1.5.0",
+                "yiisoft/yii2": ">=2.0.5"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\mongodb\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "MongoDb extension for the Yii framework",
+            "keywords": [
+                "active-record",
+                "mongo",
+                "mongodb",
+                "yii2"
+            ],
+            "time": "2016-05-09 10:57:48"
+        },
+        {
             "name": "yiisoft/yii2-swiftmailer",
             "version": "2.0.5",
             "source": {
@@ -755,33 +1332,29 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
+                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
-                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3|^7.0"
             },
             "require-dev": {
+                "ext-intl": "*",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~1.5"
             },
-            "suggest": {
-                "ext-intl": "*"
-            },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5.x-dev"
-                }
+                "branch-alias": []
             },
             "autoload": {
                 "psr-4": {
@@ -803,7 +1376,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-05-29 06:29:14"
+            "time": "2016-04-29 12:21:54"
         },
         {
             "name": "phpspec/php-diff",
