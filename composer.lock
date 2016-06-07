@@ -974,20 +974,21 @@
         },
         {
             "name": "yii2mod/yii2-sweet-alert",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yii2mod/yii2-sweet-alert.git",
-                "reference": "02e5186c312702729cd27af5d978d97915260b2b"
+                "reference": "b14fe7a0a9a1845f3115e3f846fbe91fb96b4231"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yii2mod/yii2-sweet-alert/zipball/02e5186c312702729cd27af5d978d97915260b2b",
-                "reference": "02e5186c312702729cd27af5d978d97915260b2b",
+                "url": "https://api.github.com/repos/yii2mod/yii2-sweet-alert/zipball/b14fe7a0a9a1845f3115e3f846fbe91fb96b4231",
+                "reference": "b14fe7a0a9a1845f3115e3f846fbe91fb96b4231",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/sweetalert": "*"
+                "bower-asset/sweetalert": "*",
+                "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1010,7 +1011,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2015-09-24 10:45:11"
+            "time": "2016-06-01 10:40:21"
         },
         {
             "name": "yiisoft/yii2",
